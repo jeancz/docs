@@ -91,7 +91,7 @@ We will start with an example of a visit counter, which shows how many times did
 ```php
 $section = $session->getSection('myCounter');
 $section->count++; // increment counter by one
-echo "You displayed this page $section->count Ã—";
+echo "You displayed this page $section->count ×";
 ```
 
 Accessing a non-existent variable generates no error (variable has a NULL value). It could be undesirable behavior in some cases and that's why there is a possibility to change it:
@@ -184,4 +184,3 @@ Known Limitations
 In browser Chrome in the "System" section **Continue running background apps when Google Chrome is closed.**, this option is default enable. It causes the cookie that has a set expiration to close the browser, the cookie still lives. Section with expiration 0, when you close the browser is not removed.
 
 {{composer: nette/http}}
-{{leftbar: /@menu-topics}}
